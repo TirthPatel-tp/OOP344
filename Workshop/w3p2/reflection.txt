@@ -1,0 +1,17 @@
+reflection
+
+1.
+The push() function is specifically tailored for the double data type in the UniqueQueue class, which is a derived class from the Queue class in the supplied code. To particularly tailor the behaviour of the push operation for doubles, the member function push() was specialised. In this instance, the specialisation determines whether the arriving double item is within 0.005 of the other elements in the queue. The item is not pushed if a similar value already exists in the queue. With this specialisation, the queue will only contain unique doubles.
+
+
+2.
+The v_queue array is declared as a class variable outside of the class specification for the Queue class. This makes it possible for the variable to be used by all class instances. The 'capacity' template option controls the size of the v_queue array because the Queue class is a template class. When an array is defined separately from the class definition, it is treated as a static member of the class and just one memory allocation is made, regardless of how many instances of the class are used. This method maximises memory utilisation and boosts effectiveness.
+
+
+3.
+I was able to grasp and apply ideas about template classes, specialisation, inheritance, and operator overloading after finishing this session. I had some difficulties comprehending the intent behind various member functions and implementing the necessary changes to ensure proper behaviour. However, I was able to get beyond these challenges and effectively build the desired functionality by carefully examining the code and the given specifications.
+
+
+
+
+

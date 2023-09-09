@@ -1,0 +1,17 @@
+I studied the idea of smart pointers in C++ and their benefits over raw pointers during this course. Modern C++ programming requires the use of smart pointers because they provide automated memory management and reduce the possibility of memory leaks. std::unique_ptr, which denotes a unique ownership, and std::shared_ptr, which permits shared ownership, were the two main smart pointers utilised in this workshop.
+
+Advantages of Smart Pointer Syntax:
+
+Automatic memory deallocation is a major benefit of employing smart pointers. The smart pointer automatically runs the destructor and releases the memory it owns when an object is no longer in scope. When dealing with exceptions or early returns, this is very helpful because the smart pointer makes sure that resources are released correctly.
+
+For instance, utilising std::unique_ptr rather than raw pointers in the GeneratingList module reduces the requirement for explicit memory deallocation. The smart pointer assumes ownership when an object is added to the GeneratingList container using +=, and memory will be released automatically when the smart pointer is reset or exits its scope.
+
+Difference between Raw and Smart Pointer Syntax in the Solution:
+
+Manual memory management is necessary in the raw pointer syntax version, and it is the programmer's responsibility to deallocate memory. If the programmer forgets to erase allocated memory, this could result in potential problems like memory leaks.
+
+The risk of memory leaks is decreased by utilising smart pointer syntax, such as std::unique_ptr. When the pointer is no longer required, the intelligent pointer handles deallocation and memory management automatically. This streamlines the code, reduces the likelihood of errors, and encourages improved memory management techniques.
+
+For example, the writeRaw() function in the WritingRecord module uses raw pointers to manually manage memory. Smart pointers, on the other hand, are employed in the writeSmart() function to manage memory automatically. Smart pointers enable a more condensed and reliable implementation.
+
+In conclusion, building safer and more dependable code in C++ requires an awareness of and proficiency with smart pointers. We may avoid typical memory-related issues and enhance the overall quality and maintainability of our C++ programmes by using smart pointers. I now have a firm understanding of smart pointers and their advantages, and I may use this understanding in future C++ projects to write code that is more effective and error-free.

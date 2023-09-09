@@ -1,0 +1,20 @@
+Patel Tirth Kanubhai
+Id:- 172244212
+
+Throughout this workshop, I have managed and manipulated a number of crimes using a variety of STL functions. Std::copy, Std::accumulate, Std::for_each, Std::sort, and Std::remove_if are some of the functions I've used.
+
+Because it offers a simple and effective way to copy elements from one range to another, I decided to utilise std::copy to copy data from a file into a sequential container.
+
+
+To determine the overall number of cases and resolved cases in the collection of crimes, I used the std::accumulate function. I was able to calculate the total by adding the values in a range using this code.
+
+I combined a lambda expression with std::for_each to process each crime in the collection. I was able to do this without the use of manual loops and define an operation to be applied to each offence.
+
+I used std::sort to order the collection of offences. According to a predetermined criterion, this algorithm sorts the components in the range. According to the criteria I set (province, crime, cases, or resolved), I sorted the offences in my case.
+
+By eliminating the token [None] from the crime field of invalid crimes, I used std::remove_if to clear the list of crimes. I was able to eliminate elements from the range that meet a certain requirement thanks to this approach.
+
+In comparison to manually implementing the functionality using loops, employing STL algorithms has a number of benefits. It first results in shorter, more readable code. The code is simpler to comprehend and maintain because the algorithms' semantics are clear and well-known. 
+Performance is effectively achieved by the algorithms' strong optimisation and use of underlying data structures.
+
+I would rewrite the function to take an enum parameter in place of a string in order to prevent the client from giving an erroneous field name when sorting the collection of crimes. The client would be limited to utilising one of these predetermined values and the enum would describe the permissible fields (Province, Crime, Cases, Resolved). This method would result in a compilation error for any attempt to define an erroneous field, giving the client quick feedback and avoiding runtime issues.

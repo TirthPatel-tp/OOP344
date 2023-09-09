@@ -1,0 +1,20 @@
+During this workshop, we practised processing encrypted text data, backing it up to a binary file, retrieving the data from the binary file, and incorporating multi-threading into the solution. Consider the main ideas discovered and the difficulties encountered in the process:
+
+1. Use of Binary Files:
+
+To store the encrypted data effectively in this workshop, binary files were used. When working with non-text material, such as encrypted characters, binary mode's ability to write raw binary data to a file is extremely helpful. Utilising binary files allows us to guarantee that the data is written exactly as it is, without any additional formatting or conversions.
+
+2. Binding Functions to Arguments:
+
+Binding a function to its arguments is crucial because it enables us to just partially evaluate a function, fix some of its arguments, and then create a new function with the remaining arguments. In this workshop, the converter function was bound to the Cryptor object and key argument using std::bind from the functional library. This made it possible for us to design many tasks for multi-threading, each of which received a different data partition and carried out encryption simultaneously.
+
+3. Advantages of Multi-Threading:
+It include better performance and efficient use of contemporary multi-core CPUs. We could handle several data divisions concurrently by dividing the encryption operation into many threads, which decreased the overall processing time. The encryption procedure was significantly sped up as a result, especially when working with massive datasets.
+
+Challenges Faced:
+
+=> The proper partitioning of the data for multi-threading was a hurdle. We needed to make sure that each thread processes an equal amount of data, and the final thread should take care of any extra bytes. Partition sizes had to be calculated carefully for this.
+
+=>Correct memory management presented another difficulty, particularly during the restoration procedure. To avoid memory leaks or unpredictable behaviour, we needed to make sure that the text data was properly allocated and deallocated in memory.
+
+In conclusion, this course gave participants useful hands-on experience with managing binary files, function binding, and multi-threading. Building effective and reliable apps that can handle massive volumes of data and make use of contemporary hardware capabilities requires a solid understanding of these ideas.

@@ -1,0 +1,10 @@
+I discovered functors and lambda expressions in this workshop. Lambdas are anonymous inline functions, whereas functors are objects that behave like functions. Lambdas are useful for localised operations, but functors offer flexibility and reuse.
+
+
+Currently, the SpellChecker constructor utilises exceptions to signal issues, but a different strategy would be to return error codes or values. This enables additional control over error management and explicit error handling.
+
+The Movie and Book classes might be rewritten with a base class, "Media," that encompasses common functionality to prevent duplicating code. This encourages code reuse and gets rid of duplicate code.
+
+If the Movie and Book classes are always instantiated using custom constructors, the default constructors may not be required. By eliminating the default constructors, proper initialization is ensured and any abuse is prevented.
+
+Overall, this course increased my comprehension of these ideas and how they are used in C++ programming.

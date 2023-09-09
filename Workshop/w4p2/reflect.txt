@@ -1,0 +1,7 @@
+I've learned how to differentiate between composition and aggregation in terms of how they are implemented after completing this workshop. While aggregation depicts a lesser link where the components can exist independently, composition represents a strong ownership relationship where the parts cannot exist separately.
+
+Additionally, I now understand how composition and aggregate use the move and copy functions differently. While the copy function makes independent copies, the move function efficiently transfers ownership or resources.
+
+I've used association, aggregation, and composition connections in many locations across my code. A whole class made up of components that can exist independently is represented by aggregation, a whole class is represented by sections that cannot exist alone, and association represents independent classes with no ownership.
+
+Overall, this class has given me a clear knowledge of these ideas and how they're used, and I was able to get through any challenges I ran across along the way.

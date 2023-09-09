@@ -1,0 +1,14 @@
+Patel Tirth Kanubhai
+Id:- 172244212
+
+After finishing this workshop, I had a thorough comprehension of many important topics, which I effectively applied to my solution. One key idea was inheritance, which enabled me to derive the class Racecar from the basic class Car and give it traits and behaviours. This allowed me to include characteristics unique to race cars, such a booster for higher top speed.
+
+Another important idea that I studied and put to use was exception handling. I improved the Car module by changing the custom constructor to recognise incorrect records and produce the necessary exceptions. For instance, an exception was raised to signify an incorrect record if the condition token for a car was neither "n," "u," nor "b."
+
+In order to avoid memory leaks, dynamically allocated memory must be dealtlocated. I added a destructor to the Autoshop module that repeatedly removed each dynamically allocated object while iterating over the vector of automobiles. This made ensuring that memory was properly released when the Autoshop object was destroyed.
+
+The loadData() function examined the input data and carried out validation tests to find problems. For instance, the createInstance() function in the Utilities module chose the vehicle type based on the stream's first character that wasn't a blank. A Racecar instance was generated if the character was either 'r' or 'R'. An exception was raised if an unidentified vehicle type was found.
+
+I choose to store collections of vehicles using the containers std::listsdds::Vehicle* and std::vectorsdds::Vehicle*. By saving pointers to the underlying class, this decision made it possible for polymorphic behaviour. By using pointer containers, it was possible to handle several derived object types using a base class's common interface. For the Autoshop module to efficiently manage many car kinds and achieve polymorphism, this was essential.
+
+If you like, you can use std::listsdds::Vehicle and std::vectorsdds::Instead of storing pointers, a vehicle would store actual things. This would, however, cause object slicing and the loss of the unique characteristics and behaviours of the derived classes. In order to maintain polymorphic behaviour and access derived class functions via the base class interface, pointer containers were required.
